@@ -1,4 +1,9 @@
 /** @type {import('next').NextConfig} */
-const nextConfig = {};
+const nextConfig = {
+  plugins: ["react-compiler"],
+  rules: {
+    "react-compiler/react-compiler": "error",
+  },
+};
 
-export default nextConfig;
+module.exports = nextConfig;
